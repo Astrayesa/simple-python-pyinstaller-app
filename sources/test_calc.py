@@ -35,6 +35,14 @@ class TestCalc(unittest.TestCase):
         result = calc.add2('abc', 'def')
         self.assertEqual(result, 'abcdef')
 
+    def test_add_strings2(self):
+        """
+        Test the addition of two strings returns the two strings as one
+        concatenated string
+        """
+        result = calc.add2('hello', 'world')
+        self.assertEqual(result, 'helloworld')
+        
     def test_add_string_and_integer(self):
         """
         Test the addition of a string and an integer returns them as one
